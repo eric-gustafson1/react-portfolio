@@ -1,14 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
+import { Container, Row, Col } from 'reactstrap';
+import BioCard from './components/BioCard';
+import Nav from './components/Nav';
+import PortfolioCard from './components/PortfolioCard';
+import SkillsCard from './components/SkillCard';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
+const App = () => {
+  return (
+    <Container>
+      <Row>
+        <Col>
+          <Nav />
+        </Col>
+      </Row>
+    </Container>
 
-        <h1>test meow</h1>
-      </div>
-    );
-  }
+  );
 }
 
 export default App;
