@@ -2,10 +2,12 @@ import React from "react";
 import { Container, Row, Col } from 'reactstrap';
 import SkillCard from '../../components/SkillCard';
 import BioCard from '../../components/BioCard';
+import './style.css'
+
 
 const About = () => {
     return (
-        <Container>
+        <Container className="about-container">
             <Row>
                 <Col>
                     <BioCard />
@@ -13,11 +15,9 @@ const About = () => {
             </Row>
 
             <Row>
-                <Col>
-                    <SkillCard />
-                    <SkillCard />
-                    <SkillCard />
-                </Col>
+                <SkillCard />
+                <SkillCard />
+                <SkillCard />
             </Row>
 
         </Container>

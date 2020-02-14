@@ -5,12 +5,12 @@ import {
     CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 import image from '../../assets/EricHeadShot.jpg'
-import './style.css'
+import './style.css';
 
 const BioCard = () => {
     return (
         <>
-            <Card className="bio-card mx-auto">
+            <Card className="mx-auto">
                 <CardImg className="image m-2" top width="100%" src={image} alt="Card image cap" />
                 <CardBody>
                     <CardTitle className="text-dark font-weight-bold" >Eric Gustafson</CardTitle>
