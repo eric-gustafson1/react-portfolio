@@ -1,13 +1,23 @@
 import React from "react";
 import { Container, Row, Col } from 'reactstrap';
-import BioCard from './components/BioCard';
-import SkillsCard from './components/SkillCard';
+import SkillCard from '../../components/SkillCard';
+import BioCard from '../../components/BioCard';
 
-const App = () => {
+const About = () => {
     return (
         <Container>
             <Row>
-                <BioCard />
+                <Col>
+                    <BioCard />
+                </Col>
+            </Row>
+
+            <Row>
+                <Col>
+                    <SkillCard />
+                    <SkillCard />
+                    <SkillCard />
+                </Col>
             </Row>
 
         </Container>
@@ -15,4 +25,4 @@ const App = () => {
     );
 }
 
-export default App;
+export default About;

@@ -5,3 +5,5 @@ const SkillCard = () => {
         <h3>skill card</h3>
     )
 }
+
+export default SkillCard;

@@ -5,12 +5,12 @@ import {
     CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 import image from '../../assets/EricHeadShot.jpg'
-import './BioCard.css'
+import './style.css'
 
-const BioCard = (props) => {
+const BioCard = () => {
     return (
-        <div>
-            <Card>
+        <>
+            <Card className="bio-card mx-auto">
                 <CardImg className="image m-2" top width="100%" src={image} alt="Card image cap" />
                 <CardBody>
                     <CardTitle className="text-dark font-weight-bold" >Eric Gustafson</CardTitle>
@@ -20,7 +20,7 @@ const BioCard = (props) => {
                     <Button className="m-2">View Resume</Button>
                 </CardBody>
             </Card>
-        </div>
+        </>
     );
 };
 export default BioCard;

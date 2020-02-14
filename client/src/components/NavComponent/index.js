@@ -7,11 +7,6 @@ import {
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
 } from 'reactstrap';
 
 const NavComponent = (props) => {
@@ -31,15 +26,14 @@ const NavComponent = (props) => {
                             <NavLink href="/about/">About</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/components/">Portfolio</NavLink>
+                            <NavLink href="/portfolio/">Portfolio</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/components/">Resume</NavLink>
+                            <NavLink href="/resume/">Resume</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/components/">Contact</NavLink>
+                            <NavLink href="/contact/">Contact</NavLink>
                         </NavItem>
-
                     </Nav>
                 </Collapse>
             </Navbar>

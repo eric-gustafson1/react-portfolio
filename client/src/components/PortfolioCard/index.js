@@ -2,7 +2,7 @@ import React from 'react';
 
 const PortfolioCard = () => {
     return (
-        null
+        <h1>Portfolio Card</h1>
     )
 }
 

@@ -1,20 +1,32 @@
 import React from "react";
-import { Container, Row, Col } from 'reactstrap';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import BioCard from './components/BioCard';
-import Nav from './components/Nav';
-import PortfolioCard from './components/PortfolioCard';
-import SkillsCard from './components/SkillCard';
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
+import NavComponent from './components/NavComponent';
 
 const App = () => {
   return (
     <Router>
       <div>
-        <Nav />
+        <NavComponent />
 
         <Switch>
           <Route exact path={['/', '/about']}>
-            <BioCard />
+            <About />
+          </Route>
+
+          <Route exact path={'/portfolio'}>
+            <Portfolio />
+          </Route>
+
+          <Route exact path={'/resume/'}>
+            <Resume />
+          </Route>
+
+          <Route exact pate={'/contact/'} >
+            <Contact />
           </Route>
 
         </Switch>
