@@ -4,9 +4,9 @@ import { Container, Row, Col } from 'reactstrap';
 const Contact = () => {
     return (
         <Container>
+            <h1 className="text-success">Contact Page</h1>
             <Row>
                 <Col>
-                    <h1>Contact Page</h1>
                 </Col>
             </Row>
         </Container>

@@ -3,24 +3,24 @@ import { Container, Row, Col } from 'reactstrap';
 import SkillCard from '../../components/SkillCard';
 import BioCard from '../../components/BioCard';
 import './style.css'
+import data from '../../data/skills.json';
+
 
 
 const About = () => {
     return (
-        <Container className="about-container">
+        < Container className="about-container" >
             <Row>
                 <Col>
                     <BioCard />
                 </Col>
             </Row>
 
-            <Row>
-                <SkillCard />
-                <SkillCard />
-                <SkillCard />
-            </Row>
+            <h1 className="text-success">Skill Sets</h1>
 
-        </Container>
+            <SkillCard data={data} />
+
+        </Container >
 
     );
 }

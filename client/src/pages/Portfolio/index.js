@@ -4,7 +4,9 @@ import PortfolioCard from '../../components/PortfolioCard'
 
 const Portfolio = () => {
     return (
-        <Container>
+        <Container className="container">
+            <h1 className="text-success">Portfolio</h1>
+            <h3 className="text-success">Recent Work</h3>
             <Row>
                 <Col>
                     <PortfolioCard />
