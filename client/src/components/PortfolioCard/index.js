@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, CardTitle, CardText, Col, Row } from 'reactstrap';
-// import './style.css';
 
 
 

@@ -6,7 +6,7 @@ import { CardTitle } from 'reactstrap';
 
 function CardTitleComponent({ title }) {
     return (
-        <CardTitle>
+        <CardTitle className="mx-2 mt-2">
             <CardTitleTextComponent className="CardTitle" title={title} />
         </CardTitle>
     );

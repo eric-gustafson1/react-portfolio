@@ -18,7 +18,7 @@
         "img": "dayplanner.png",
         "title": "Day Planner",
         "repo": "https://github.com/eric-gustafson1/day-planner",
-        "description": "A calendar application that allows the user to save events for each hour of the day."
+        "description": "A calendar application that allows the user to save events for each hour of the day. Using JavaScript, jQuery, moment.js"
     },
     {
         "id": 4,

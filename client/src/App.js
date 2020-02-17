@@ -6,6 +6,7 @@ import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import NavComponent from './components/NavComponent';
 import portfolios from './data/portfolio.json'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
           </Route>
 
         </Switch>
+        <Footer />
 
       </div>
     </Router>

@@ -4,7 +4,7 @@ import { CardText, CardLink } from 'reactstrap';
 
 function CardBodyComponent({ repo, description }) {
     return (
-        <CardText>
+        <CardText className="mx-2">
             <CardLink className="text-success" target="blank" href={repo}>GitHub Repo</CardLink>
             <br></br>
             {description}
