@@ -16,7 +16,7 @@ const About = () => {
                 </Col>
             </Row>
 
-            <h1 className="text-success">Skill Sets</h1>
+            <h1 className="text-success mt-4">Skill Sets</h1>
 
             <SkillCard data={data} />
 

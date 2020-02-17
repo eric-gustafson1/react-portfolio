@@ -5,6 +5,7 @@ import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import NavComponent from './components/NavComponent';
+import portfolios from './data/portfolio.json'
 
 const App = () => {
   return (
@@ -18,7 +19,7 @@ const App = () => {
           </Route>
 
           <Route exact path={'/portfolio'}>
-            <Portfolio />
+            <Portfolio props={portfolios} />
           </Route>
 
           <Route exact path={'/resume/'}>

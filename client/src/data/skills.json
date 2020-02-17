@@ -4,9 +4,11 @@
         "type": "Frontend Skills",
         "skills": [
             "React",
-            "HTML and CSS",
+            "HTML",
+            "CSS",
             "Bootstrap",
-            "AJAX"
+            "AJAX",
+            "Materialize"
         ]
     },
     {
