@@ -1,29 +1,29 @@
 import React from "react";
-import { Container, Row, Col } from 'reactstrap';
-import PortfolioCard from '../../components/PortfolioCard'
+import { Container, Row } from 'reactstrap';
+import CardContainerComponent from '../../components/CardContainerComponent';
+import portfolios from '../../data/portfolio.json';
 
-const Portfolio = (props) => {
-    console.log(props)
-    const portfolios = props;
+
+const Portfolio = () => {
+
     return (
-        <Container className="container">
+        <Container>
             <h1 className="text-success">Portfolio</h1>
-            <h3 className="text-success">Recent Work</h3>
-            {props.map(item =>
-                <Row>
-                    <Col>
-                        <PortfolioCard
-                            img={item.img}
-                            title={item.title}
-                            repo={item.repo}
-                            description={item.description}
-                        />
-                    </Col>
-                </Row>
-            )}
+            <h3 className="text-success mt-4">Recent Work</h3>
+            <Row>
+                {portfolios.map((portfolio) => {
+                    return (
+                        <CardContainerComponent
+                            key={portfolio.id}
+                            title={portfolio.title}
+                            img={portfolio.img}
+                            repo={portfolio.repo}
+                            description={portfolio.description}
+                        />)
+                })}
+            </Row>
         </Container>
-
-    )
+    );
 }
 
 export default Portfolio;
