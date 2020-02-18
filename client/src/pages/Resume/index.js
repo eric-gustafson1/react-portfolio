@@ -22,8 +22,11 @@ export default class Resume extends Component {
     render() {
         const { numPages } = this.state;
         return (
-            <Container className="mt-5 resume-container">
+            <Container className="resume-container">
+                <h1 className="text-success">Resume</h1>
+
                 <Document
+                    className="mt-5"
                     file={pdf}
                     onLoadSuccess={this.onDocumentLoadSuccess}
                     onLoadError={console.error}

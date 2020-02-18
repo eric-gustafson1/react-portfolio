@@ -3,8 +3,8 @@ import "./style.css";
 
 function Footer() {
     return (
-        <footer className="footer">
-            <span><h4 className="text-success">Eric Gustafson 2020</h4></span>
+        <footer className="footer ">
+            <span className="text-success"><h5>Eric Gustafson Copyright 2020</h5></span>
         </footer>
     );
 }

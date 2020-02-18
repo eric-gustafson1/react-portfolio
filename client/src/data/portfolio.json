@@ -33,5 +33,12 @@
         "title": "Pilates Website",
         "repo": "https://github.com/eric-gustafson1/mat-pilates",
         "description": "An informational website for a pilates business.  Using JavaScript, Materialize, jQuery"
+    },
+    {
+        "id": 6,
+        "img": "directory.png",
+        "title": "Emplyee Directory",
+        "repo": "https://github.com/eric-gustafson1/employee-directory",
+        "description": "A frontend React Employee Directory app.  Uses Axios API to import random people."
     }
 ]

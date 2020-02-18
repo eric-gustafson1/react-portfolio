@@ -10,7 +10,9 @@ import data from '../../data/skills.json';
 const About = () => {
     return (
         < Container className="about-container" >
-            <Row>
+            <h1 className="text-success">About</h1>
+
+            <Row className="mt-5">
                 <Col>
                     <BioCard />
                 </Col>
