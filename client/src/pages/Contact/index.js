@@ -37,13 +37,13 @@ const Contact = () => {
     return (
         <Container>
             <h1 className="text-success">Contact Me</h1>
-            <Row>
-                <Col md="4">
-                    <CardImg src={img}></CardImg>
+            <Card>
+                <Row>
+                    <Col md="4">
+                        <CardImg src={img}></CardImg>
 
-                </Col>
-                <Col md="6">
-                    <Card>
+                    </Col>
+                    <Col md="6">
                         <form onSubmit={handleOnSubmit}>
                             <CardTitle className="text-success mt-5 ml-5"><h3>Eric Gustafson</h3></CardTitle>
                             <CardSubtitle className="text-monospace ml-5">DevOps Engineer</CardSubtitle>
@@ -68,9 +68,9 @@ const Contact = () => {
 
 
                         </form>
-                    </Card>
-                </Col>
-            </Row>
+                    </Col>
+                </Row>
+            </Card>
 
         </Container>
     );
