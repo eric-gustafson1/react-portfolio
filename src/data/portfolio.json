@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "img": "weather.gif",
+        "title": "Weather Dashboard",
+        "repo": "https://github.com/eric-gustafson1/weather-dashboard",
+        "description": "A responsive weather dashboard application with search functionality to find current weather conditions and the future weather outlook for multiple cities."
+    },
+    {
+        "id": 2,
+        "img": "shows.gif",
+        "title": "Shows in Denver",
+        "repo": "https://github.com/eric-gustafson1/shows-in-denver",
+        "description": "Search for concerts in Denver, CO by artist and date. Using JavaScript, Materialize, jQuery, moment.js, Google Map API, and Seatgeek API. Mobile first design."
+    },
+    {
+        "id": 3,
+        "img": "dayplanner.png",
+        "title": "Day Planner",
+        "repo": "https://github.com/eric-gustafson1/day-planner",
+        "description": "A calendar application that allows the user to save events for each hour of the day. Using JavaScript, jQuery, moment.js"
+    },
+    {
+        "id": 4,
+        "img": "whiskeyJournal.png",
+        "title": "Whiskey Journal",
+        "repo": "https://github.com/eric-gustafson1/whiskey-journal",
+        "description": "A responsive whiskey journal for logging whiskey tasting notes."
+    },
+    {
+        "id": 5,
+        "img": "pilates.png",
+        "title": "Pilates Website",
+        "repo": "https://github.com/eric-gustafson1/mat-pilates",
+        "description": "An informational website for a pilates business.  Using JavaScript, Materialize, jQuery"
+    },
+    {
+        "id": 6,
+        "img": "directory.png",
+        "title": "Emplyee Directory",
+        "repo": "https://github.com/eric-gustafson1/employee-directory",
+        "description": "A frontend React Employee Directory app.  Uses Axios API to import random people."
+    }
+]
