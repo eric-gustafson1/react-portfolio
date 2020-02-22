@@ -15,19 +15,19 @@ const App = () => {
         <NavComponent />
 
         <Switch>
-          <Route exact path={['/', '/about']}>
+          <Route exact path={['/react-portfolio/', '/about']}>
             <About />
           </Route>
 
-          <Route exact path={'/portfolio'}>
+          <Route exact path={'/react-portfolio/portfolio'}>
             <Portfolio props={portfolios} />
           </Route>
 
-          <Route exact path={'/resume/'}>
+          <Route exact path={'/react-portfolio/resume/'}>
             <Resume />
           </Route>
 
-          <Route exact pate={'/contact/'} >
+          <Route exact pate={'/react-portfolio/contact/'} >
             <Contact />
           </Route>
 
