@@ -10,24 +10,25 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/react-portfolio">
+
       <div>
         <NavComponent />
 
         <Switch>
-          <Route exact path={['/react-portfolio/', '/about']}>
+          <Route exact path={['/', '/about']}>
             <About />
           </Route>
 
-          <Route exact path={'/react-portfolio/portfolio'}>
+          <Route exact path={'/portfolio'}>
             <Portfolio props={portfolios} />
           </Route>
 
-          <Route exact path={'/react-portfolio/resume/'}>
+          <Route exact path={'/resume/'}>
             <Resume />
           </Route>
 
-          <Route exact pate={'/react-portfolio/contact/'} >
+          <Route exact pate={'/contact/'} >
             <Contact />
           </Route>
 
