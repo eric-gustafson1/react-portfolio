@@ -15,12 +15,8 @@ const App = () => {
       <div>
         <NavComponent />
 
-        <>
-          <Route exact path='/'>
-            <About />
-          </Route>
-
-          <Route exact path='/about'>
+        <Switch>
+          <Route exact path={['/', '/about']}>
             <About />
           </Route>
 
@@ -35,7 +31,7 @@ const App = () => {
           <Route exact path='/contact' >
             <Contact />
           </Route>
-        </>
+        </Switch>
 
         <Footer />
 
