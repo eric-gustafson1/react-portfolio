@@ -15,28 +15,17 @@ const App = () => {
       <div>
         <NavComponent />
 
-        <Switch>
-          <Route exact path={['/', '/about']}>
-            <About />
-          </Route>
-
-          <Route exact path={'/portfolio'}>
-            <Portfolio props={portfolios} />
-          </Route>
-
-          <Route exact path={'/resume/'}>
-            <Resume />
-          </Route>
-
-          <Route exact pate={'/contact/'} >
-            <Contact />
-          </Route>
-
-        </Switch>
+        <>
+          <Route exact path="/" component={About} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/portfolio" component={portfolio} />
+          <Route exact path="/resume" component={resume} />
+          <Route exact path="/contact" component={contact} />
+        </>
         <Footer />
 
       </div>
-    </Router>
+    </Router >
 
   );
 }
