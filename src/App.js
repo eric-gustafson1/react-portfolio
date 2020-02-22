@@ -16,12 +16,27 @@ const App = () => {
         <NavComponent />
 
         <>
-          <Route exact path="/" component={About} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/portfolio" component={portfolio} />
-          <Route exact path="/resume" component={resume} />
-          <Route exact path="/contact" component={contact} />
+          <Route exact path='/'>
+            <About />
+          </Route>
+
+          <Route exact path='/about'>
+            <About />
+          </Route>
+
+          <Route exact path='/portfolio'>
+            <Portfolio props={portfolios} />
+          </Route>
+
+          <Route exact path='/resume'>
+            <Resume />
+          </Route>
+
+          <Route exact path='/contact' >
+            <Contact />
+          </Route>
         </>
+
         <Footer />
 
       </div>
