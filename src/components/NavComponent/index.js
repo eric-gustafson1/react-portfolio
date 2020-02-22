@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
     Collapse,
     Navbar,
@@ -20,27 +21,27 @@ const NavComponent = (props) => {
     return (
         <div>
             <Navbar color="light" light expand="md">
-                <NavbarBrand href="/">Eric Gustafson</NavbarBrand>
+                <NavbarBrand >Eric Gustafson</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="/about/">About</NavLink>
+                            <Link to="/about" className="btn m-2 btn-success">About</Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/portfolio/">Portfolio</NavLink>
+                            <Link to="/portfolio" className="btn m-2 btn-success">Portfolio</Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/resume/">Resume</NavLink>
+                            <Link to="/resume" className="btn m-2 btn-success">Resume</Link>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/contact/">Contact</NavLink>
+                            <Link to="/contact" className="btn m-2 btn-success">Contact</Link>
                         </NavItem>
-                        <NavItem className='font'>
-                            <NavLink href="https://github.com/eric-gustafson1" target="_blank"><FontAwesomeIcon icon={faGithub} /></NavLink>
+                        <NavItem>
+                            <NavLink className="m-2" href="https://github.com/eric-gustafson1" target="_blank"><FontAwesomeIcon icon={faGithub} /></NavLink>
                         </NavItem>
-                        <NavItem className='font'>
-                            <NavLink href="https://www.linkedin.com/in/eric-gustafson-4006b4/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></NavLink>
+                        <NavItem>
+                            <NavLink className="m-2" href="https://www.linkedin.com/in/eric-gustafson-4006b4/" target="_blank"><FontAwesomeIcon icon={faLinkedinIn} /></NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>

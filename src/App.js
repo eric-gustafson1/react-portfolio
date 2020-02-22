@@ -16,7 +16,7 @@ const App = () => {
         <NavComponent />
 
         <Switch>
-          <Route exact path={['/', '/about']}>
+          <Route exact path={['/', '/about', '/react-portfolio']}>
             <About />
           </Route>
 
@@ -31,6 +31,7 @@ const App = () => {
           <Route exact path='/contact' >
             <Contact />
           </Route>
+
         </Switch>
 
         <Footer />

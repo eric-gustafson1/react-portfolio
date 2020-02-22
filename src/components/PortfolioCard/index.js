@@ -3,7 +3,7 @@ import { Card, CardTitle, CardText, Col, Row } from 'reactstrap';
 
 
 
-const PortfolioCard = ({ img, title, repo, description }) => {
+const PortfolioCard = ({ title, description }) => {
 
     return (
         <>
